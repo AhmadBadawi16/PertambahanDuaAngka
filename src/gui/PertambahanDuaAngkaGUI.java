@@ -146,6 +146,11 @@ public class PertambahanDuaAngkaGUI extends javax.swing.JFrame {
 
         btKeluar.setText("Keluar");
         btKeluar.setName("btKeluar"); // NOI18N
+        btKeluar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btKeluarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -223,6 +228,11 @@ public class PertambahanDuaAngkaGUI extends javax.swing.JFrame {
         
         tfAngkaPertama.requestFocus();
     }//GEN-LAST:event_btHapusActionPerformed
+
+    private void btKeluarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btKeluarActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_btKeluarActionPerformed
 
     /**
      * @param args the command line arguments

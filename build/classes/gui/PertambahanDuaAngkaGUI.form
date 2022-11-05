@@ -251,6 +251,9 @@
             <Property name="text" type="java.lang.String" value="Keluar"/>
             <Property name="name" type="java.lang.String" value="btKeluar" noResource="true"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btKeluarActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>

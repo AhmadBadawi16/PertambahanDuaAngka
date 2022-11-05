@@ -138,6 +138,11 @@ public class PertambahanDuaAngkaGUI extends javax.swing.JFrame {
 
         btHapus.setText("Hapus");
         btHapus.setName("btHapus"); // NOI18N
+        btHapus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btHapusActionPerformed(evt);
+            }
+        });
 
         btKeluar.setText("Keluar");
         btKeluar.setName("btKeluar"); // NOI18N
@@ -208,6 +213,16 @@ public class PertambahanDuaAngkaGUI extends javax.swing.JFrame {
         
         tfHasil.setText(Integer.toString(hasil));
     }//GEN-LAST:event_btTambahActionPerformed
+
+    private void btHapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btHapusActionPerformed
+        // TODO add your handling code here:
+        
+        tfAngkaPertama.setText("");
+        tfAngkaKedua.setText(null);
+        tfHasil.setText("");
+        
+        tfAngkaPertama.requestFocus();
+    }//GEN-LAST:event_btHapusActionPerformed
 
     /**
      * @param args the command line arguments
